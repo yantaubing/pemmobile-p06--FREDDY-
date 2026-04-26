@@ -42,7 +42,7 @@
 ![Riwayat Pesanan](assets/tap8.jpeg)
 
 ## Cara Menjalankan
-1. Clone repo  : git clone [http://localhost:8081]
+1. Clone repo  : git clone []
 2. Install deps: npm install
 3. Jalankan    : npx expo start
 4. Scan QR Code dengan Expo Go di HP"# pemmobile-p06--FREDDY-" 
