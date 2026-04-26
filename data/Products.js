@@ -1,0 +1,156 @@
+export const PRODUCTS = [
+  {
+    id: 1,
+    name: 'Kopi Kenangan Mantan',
+    price: 18000,
+    stock: 50,
+    rating: 4.8,
+    sold: 1500,
+    image: '☕',
+    bgColor: '#d4a373',
+    description: 'Kopi susu gula aren yang rasanya bikin ingat kenangan manis di masa lalu.'
+  },
+  {
+    id: 2,
+    name: 'Laptop Gaming ROG',
+    price: 25000000,
+    stock: 5,
+    rating: 4.9,
+    sold: 12,
+    image: '💻',
+    bgColor: '#111827',
+    description: 'Laptop gaming super kencang dengan RGB lighting dan cooling system mantap.'
+  },
+  {
+    id: 3,
+    name: 'Sepatu Sneakers Kece',
+    price: 450000,
+    stock: 0,
+    rating: 4.5,
+    sold: 340,
+    image: '👟',
+    bgColor: '#f87171',
+    description: 'Sneakers kasual cocok untuk hangout dan jalan-jalan.'
+  },
+  {
+    id: 4,
+    name: 'Kamera Mirrorless',
+    price: 8500000,
+    stock: 12,
+    rating: 4.7,
+    sold: 89,
+    image: '📷',
+    bgColor: '#9ca3af',
+    description: 'Kamera mirrorless ringkas dengan hasil foto yang tajam dan video 4K.'
+  },
+  {
+    id: 5,
+    name: 'Headphone Wireless',
+    price: 1200000,
+    stock: 25,
+    rating: 4.6,
+    sold: 210,
+    image: '🎧',
+    bgColor: '#3b82f6',
+    description: 'Headphone bluetooth dengan fitur noise cancelling yang luar biasa.'
+  },
+  {
+    id: 6,
+    name: 'Smartwatch Keren',
+    price: 3500000,
+    stock: 18,
+    rating: 4.4,
+    sold: 155,
+    image: '⌚',
+    bgColor: '#10b981',
+    description: 'Jam tangan pintar untuk memantau kesehatan dan notifikasi kamu setiap hari.'
+  },
+  {
+    id: 7,
+    name: 'Buku Filosofi Teras',
+    price: 89000,
+    stock: 25000000,
+    rating: 4.6,
+    sold: 210,
+    image: '📚',
+    bgColor: '#3b82f6',
+    description: 'Buku filosofi stoik untuk menghadapi tantangan hidup.'
+  },
+  {
+    id: 8,
+    name: 'Mainan Roblox Mega Blox',
+    price: 150000,
+    stock: 9900000,
+    rating: 4.7,
+    sold: 450,
+    image: '🧱',
+    bgColor: '#fa60c9ff',
+    description: 'Mainan edukatif untuk anak-anak usia 6 tahun ke atas, melatih kreativitas dan motorik.'
+  },
+  {
+    id: 9,
+    name: "dompet kulit pria",
+    price: 990000,
+    stock: 1000000,
+    rating: 4.2,
+    sold: 500,
+    image: "👝",
+    bgColor: "#240852ff",
+    description: "Dompet kulit pria eksklusif dengan banyak slot kartu"
+  },
+  {
+    id: 10,
+    name: "Kipas angin mini",
+    price: 35000,
+    stock: 1000000,
+    rating: 4.2,
+    sold: 500,
+    image: "🌬️",
+    bgColor: "#ffd700",
+    description: "Kipas angin kecil yang cocok untuk di meja kerja atau saat travelling"
+  },
+  {
+    id: 11,
+    name: "sepatu lari",
+    price: 900000,
+    stock: 1000000,
+    rating: 4.2,
+    sold: 500,
+    image: "👟",
+    bgColor: "#851865ff",
+    description: "Sepatu lari untuk performa terbaik"
+  },
+  {
+    id: 12,
+    name: "kaos kaki pria",
+    price: 2000,
+    stock: 1000000,
+    rating: 4.2,
+    sold: 500,
+    image: "🧦",
+    bgColor: "#169c5bff",
+    description: "kaos kaki pria dengan bahan berkualitas"
+  },
+  {
+    id: 13,
+    name: "Handphone Lipat",
+    price: 15500000,
+    stock: 2000,
+    rating: 4.8,
+    sold: 10,
+    image: "📱",
+    bgColor: "#6366f1",
+    description: "Handphone lipat canggih dengan layar ganda dan desain premium yang elegan."
+  },
+  {
+    id: 14,
+    name: "iPhone 17 Pro Max",
+    price: 21000000,
+    stock: 100,
+    rating: 4.9,
+    sold: 50,
+    image: "📱",
+    bgColor: "#10b981",
+    description: "Smartphone flagship dengan kamera tercanggih dan performa ngebut."
+  },
+];
