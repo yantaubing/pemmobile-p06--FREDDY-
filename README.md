@@ -59,7 +59,7 @@ Berikut adalah dokumentasi bukti bahwa aplikasi berhasil di-build dengan EAS CLI
 
 ## 🌐 Coba Secara Online (Expo Snack)
 Untuk melihat secara langsung kode atau mencoba versi interaktifnya tanpa mengunduh APK, silakan kunjungi Expo Snack berikut:
-👉 **[Klik di sini untuk membuka Expo Snack](https://expo.dev/accounts/yantaubing050805/projects/nama-app-kamu/builds/f6b30606-8d90-4617-b900-1288ef064c09)**
+👉 **(https://expo.dev/accounts/yantaubing050805/projects/nama-app-kamu/builds/f6b30606-8d90-4617-b900-1288ef064c09)**
 
 ## 💻 Tech Stack
 - **Framework:** React Native / Expo
