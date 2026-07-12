@@ -66,3 +66,4 @@ Untuk melihat secara langsung kode atau mencoba versi interaktifnya tanpa mengun
 - **Build System:** Expo Application Services (EAS CLI)
 - **Komponen Utama:** FlatList, ScrollView, StyleSheet
 - **State/Storage:** [Misal: React Navigation, AsyncStorage, Firebase]"# pertemuan-14" 
+"# pertemuan-14" 
