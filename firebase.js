@@ -1,23 +1,31 @@
 import { initializeApp } from 'firebase/app';
-import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
+import { initializeAuth, getReactNativePersistence, getAuth } from 'firebase/auth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Platform } from 'react-native';
 
-// Konfigurasi firebase kamu
 const firebaseConfig = {
-  apiKey: "AIzaSyAG9zVrOA1i5E0_RcTNSfK73NEERrTdWfk",  // ~39 karakter, ASLI
-  authDomain: "penjualan-shop.firebaseapp.com",
-  projectId: "penjualan-shop",
-  storageBucket: "penjualan-shop.firebasestorage.app",  // ✅ Format yang benar
-  messagingSenderId: "715234478906",             // 12 digit ASLI (Project Number)
-  appId: "1:715234478906:android:365ae345ba80a202d35e03" // ASLI dari Firebase
+  apiKey: 'AIzaSyAG9zVrOA1i5E0_RcTNSfK73NEERrTdWfk',
+  authDomain: 'penjualan-shop.firebaseapp.com',
+  projectId: 'penjualan-shop',
+  storageBucket: 'penjualan-shop.firebasestorage.app',
+  messagingSenderId: '715234478906',
+  appId: '1:715234478906:android:365ae345ba80a202d35e03',
 };
 
-// Inisialisasi App
 const app = initializeApp(firebaseConfig);
 
-// ✅ PERBAIKAN: Tambahkan persistence agar login tidak hilang
-const auth = initializeAuth(app, {
-  persistence: getReactNativePersistence(AsyncStorage)
-});
+let auth;
+
+if (Platform.OS === 'web') {
+  auth = getAuth(app);
+} else {
+  try {
+    auth = initializeAuth(app, {
+      persistence: getReactNativePersistence(AsyncStorage),
+    });
+  } catch (error) {
+    auth = getAuth(app);
+  }
+}
 
 export { app, auth };

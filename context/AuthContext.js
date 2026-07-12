@@ -30,7 +30,23 @@ export const AuthProvider = ({ children }) => {
 
   // 🆕 REGISTER
   const register = async (email, password) => {
-    return createUserWithEmailAndPassword(auth, email, password);
+    try {
+      return await createUserWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      if (error?.code === 'auth/email-already-in-use') {
+        throw new Error('Email ini sudah terdaftar. Silakan login atau gunakan email lain.');
+      }
+      if (error?.code === 'auth/weak-password') {
+        throw new Error('Password terlalu lemah. Gunakan minimal 6 karakter.');
+      }
+      if (error?.code === 'auth/invalid-email') {
+        throw new Error('Format email tidak valid.');
+      }
+      if (error?.code === 'auth/network-request-failed') {
+        throw new Error('Koneksi internet bermasalah. Coba lagi.');
+      }
+      throw error;
+    }
   };
 
   // 🚪 LOGOUT

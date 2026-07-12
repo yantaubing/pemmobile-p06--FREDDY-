@@ -31,8 +31,24 @@ export default function RegisterScreen({ navigation }) {
 
     try {
       await register(email.trim(), password);
+      Alert.alert('Berhasil', 'Akun berhasil dibuat. Silakan login.');
     } catch (err) {
-      Alert.alert('Register gagal', err.message);
+      const code = err?.code || '';
+      let message = 'Registrasi gagal.';
+
+      if (code === 'auth/email-already-in-use') {
+        message = 'Email ini sudah terdaftar. Silakan login atau gunakan email lain.';
+      } else if (code === 'auth/weak-password') {
+        message = 'Password terlalu lemah. Gunakan minimal 6 karakter.';
+      } else if (code === 'auth/invalid-email') {
+        message = 'Format email tidak valid.';
+      } else if (code === 'auth/network-request-failed') {
+        message = 'Koneksi internet bermasalah. Coba lagi.';
+      } else if (err?.message) {
+        message = err.message;
+      }
+
+      Alert.alert('Register gagal', message);
     }
   };
 

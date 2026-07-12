@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Expo app.json",
+  "type": "object",
+  "required": ["expo"],
+  "properties": {
+    "expo": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "slug": { "type": "string" },
+        "version": { "type": "string" },
+        "orientation": { "type": "string" },
+        "icon": { "type": "string" },
+        "owner": { "type": "string" },
+        "splash": {
+          "type": "object",
+          "properties": {
+            "image": { "type": "string" },
+            "resizeMode": { "type": "string" },
+            "backgroundColor": { "type": "string" }
+          },
+          "additionalProperties": true
+        },
+        "android": {
+          "type": "object",
+          "properties": {
+            "package": { "type": "string" },
+            "permissions": { "type": "array", "items": { "type": "string" } },
+            "adaptiveIcon": {
+              "type": "object",
+              "properties": {
+                "foregroundImage": { "type": "string" },
+                "backgroundColor": { "type": "string" }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        },
+        "build": {
+          "type": "object",
+          "properties": {
+            "preview": {
+              "type": "object",
+              "properties": {
+                "android": {
+                  "type": "object",
+                  "properties": {
+                    "buildType": { "type": "string" }
+                  },
+                  "additionalProperties": true
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        },
+        "extra": {
+          "type": "object",
+          "properties": {
+            "eas": {
+              "type": "object",
+              "properties": {
+                "projectId": { "type": "string" }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

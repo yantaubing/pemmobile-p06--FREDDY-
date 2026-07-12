@@ -1,49 +1,68 @@
-# ShopList App - Pemrograman Mobile Pertemuan 6
+# 📱 [Nama Aplikasi Kamu] 
 
-## Nama & NIM
-- Nama: [ FREDDY ]
-- NIM:  [ 243303621223 ]
+**Oleh:** Freddy (NIM: 243303621223)
 
-## Fitur yang Diimplementasikan
-- [x] FlatList dengan 12+ produk
-- [x] Custom ProductCard component (file terpisah)
-- [x] keyExtractor dengan ID unik
-- [x] ListEmptyComponent (empty state)
-- [x] Search / Filter real-time
-- [x] Pull-to-Refresh
-- [ ] Filter Kategori (E1) — isi jika dikerjakan
-- [ ] Toggle List/Grid View (E2) — isi jika dikerjakan
-- [ ] SectionList Mode (E3) — isi jika dikerjakan
-- [ ] Sort Produk (E4) — isi jika dikerjakan
+> Aplikasi [Jenis Aplikasi, cth: Marketplace / Profile Card] yang dibangun menggunakan React Native dan di-build menjadi APK melalui Expo Application Services (EAS).
 
-## Screenshot
-### Tampilan Utama (Daftar belanja toko online)
-![Daftar Belanja](assets/tap1.jpeg)
+## ✨ Fitur Utama
+- 🛒 **[Fitur 1]:** [Contoh: Menampilkan daftar produk menggunakan FlatList yang responsif]
+- 🔐 **[Fitur 2]:** [Contoh: Autentikasi dan fitur Stay Logged In dengan AsyncStorage]
+- 📍 **[Fitur 3]:** [Contoh: Integrasi Kamera / GPS / Data dari REST API]
+- ℹ️ **App Version Display:** Menampilkan versi aplikasi (v1.0.0) di dalam UI aplikasi.
 
-### Tampilan Utama (Login belanja toko online)
-![Login](assets/Tap2.jpeg)
+## 📥 Download APK
+Kamu bisa mengunduh dan mencoba langsung aplikasi ini di HP Android secara native melalui link EAS di bawah ini:
 
-### Tampilan Utama (List Produk)
-![List Produk](assets/tap3.jpeg)
+[![Download APK](https://img.shields.io/badge/Download-APK_via_EAS-blue?style=for-the-badge&logo=android)](MASUKKAN_LINK_EAS_DI_SINI)
 
-### Tampilan Search — saat ada hasil
-![Search Hasil](assets/tap4.jpeg)
+> **Catatan:** Link APK EAS berlaku selama 30 hari. 
 
-### Tampilan Empty State — saat tidak ada hasil
-![Search Kosong](assets/tap5.jpeg)
+### 🛠️ Cara Install di HP Android
+1. Buka link download di atas menggunakan browser di HP Android kamu.
+2. Unduh file `[nama-file].apk`.
+3. Buka file APK tersebut. Jika muncul peringatan keamanan, izinkan instalasi dari **Sumber Tidak Dikenal (Unknown Sources)**.
+4. Selesaikan instalasi dan buka aplikasi.
 
-### Tampilan Empty State — saat keranjang belanja
-![Keranjang Belanja](assets/tap6.jpeg)
+---
 
-### Tampilan Empty State — saat pembayaran/checkout
-![Pembayaran](assets/tap7.jpeg)
+## 📸 Screenshot Antarmuka (UI) Aplikasi
 
-### Tampilan Empty State — saat Riwayat Pesanan
-![Riwayat Pesanan](assets/tap8.jpeg)
+<div align="center">
+  <!-- Ganti link src dengan nama file screenshot aslimu di folder screenshots/ -->
+  <img src="./assets/1.png" width="220" alt="Halaman Utama">
+  <img src="./assets/2.png" width="220" alt="Halaman Detail">
+  <img src="./assets/3.png" width="220" alt="Halaman Profil">
+</div>
 
-## Cara Menjalankan
-1. Clone repo  : git clone []
-2. Install deps: npm install
-3. Jalankan    : npx expo start
-4. Scan QR Code dengan Expo Go di HP"# pemmobile-p06--FREDDY-" 
-"# pemmobile-p06--FREDDY-" 
+---
+
+## 🚀 Bukti Proses Build & Install (Portofolio)
+
+Berikut adalah dokumentasi bukti bahwa aplikasi berhasil di-build dengan EAS CLI dan dijalankan secara native di perangkat Android fisik (tanpa Expo Go):
+
+### 1. Status EAS Build di Dashboard (FINISHED)
+![EAS Build Status](./screenshots/bukti-eas-finished.jpg)
+*Status build Android dengan profile preview berhasil (Finished).*
+
+### 2. Dialog Instalasi APK di Perangkat Fisik
+<img src="./screenshots/bukti-install.jpg" width="250" alt="Dialog Instalasi">
+
+### 3. Icon Aplikasi di App Drawer (Home Screen)
+<img src="./screenshots/bukti-icon-drawer.jpg" width="250" alt="Icon di App Drawer">
+*Aplikasi menggunakan custom icon resolusi 1024x1024.*
+
+### 4. Aplikasi Berjalan Native (Tanpa Frame Expo Go)
+<img src="./screenshots/bukti-running.jpg" width="250" alt="Aplikasi Berjalan">
+*Custom splash screen dan antarmuka berjalan lancar tanpa crash.*
+
+---
+
+## 🌐 Coba Secara Online (Expo Snack)
+Untuk melihat secara langsung kode atau mencoba versi interaktifnya tanpa mengunduh APK, silakan kunjungi Expo Snack berikut:
+👉 **[Klik di sini untuk membuka Expo Snack](MASUKKAN_LINK_SNACK_DI_SINI)**
+
+## 💻 Tech Stack
+- **Framework:** React Native / Expo
+- **Build System:** Expo Application Services (EAS CLI)
+- **Komponen Utama:** FlatList, ScrollView, StyleSheet
+- **State/Storage:** [Misal: React Navigation, AsyncStorage, Firebase]
